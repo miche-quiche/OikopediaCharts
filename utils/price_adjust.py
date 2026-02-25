@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # --- Chargement automatique du CPI ---
-_cpi_df = pd.read_csv("Data/USCPI_1774-2024.csv", skiprows=2)
+_cpi_df = pd.read_csv("Data/US_CPI_1774-2024.csv", skiprows=2)
 _cpi_df["Year"] = _cpi_df["Year"].astype(int)
 _cpi_df.set_index("Year", inplace=True)
 
